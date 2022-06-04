@@ -1,0 +1,36 @@
+.filter-container {
+    width: 15rem;
+    padding: 2rem 1rem 6rem 1rem;
+    position: fixed;
+    margin-top: 5rem;
+    overflow: auto;
+    height: 100vh;
+}
+
+.clear {
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--primary-color);
+    margin-left: auto;
+}
+
+.filters {
+    margin: 1rem 0;
+}
+
+.category-title {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.category-select {
+    margin-top: .5rem;
+}
+
+.input {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.gap-10px {
+    gap: 10px;
+}

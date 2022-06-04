@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css";
+
 export const Navbar = () => {
     return (
         <header class="heading d-flex grow-shrink-basis align-center">
