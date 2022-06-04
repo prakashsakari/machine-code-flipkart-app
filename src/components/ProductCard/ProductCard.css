@@ -1,0 +1,26 @@
+.card-vertical {
+    width: 16rem;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 240px;
+}
+  
+.card-image {
+    height: 100%;
+    object-fit: contain;
+}
+
+.star {
+    color: orange;
+}
+
+.card-price {
+    gap: 4px;
+}
+
+.price-strike-through,
+.discount {
+    font-size: 14px;
+}
