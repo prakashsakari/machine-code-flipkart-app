@@ -37,5 +37,8 @@ export const filterReducer = (filterState, {type, payload}) => {
                 brand: payload.check ? [...filterState.brand, payload.option] : (filterState.brand.length > 0 ? filterState.brand.filter(item => item !== payload.option) : [])
             }
 
+        default:
+            return filterState
+
     }
 }
