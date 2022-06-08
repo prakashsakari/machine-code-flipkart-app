@@ -1,0 +1,12 @@
+.final-price {
+    width: 400px;
+    background-color: var(--card-background);
+}
+
+.mg-left {
+    margin-left: auto;
+}
+
+.place-order {
+    width: 100%;
+}
