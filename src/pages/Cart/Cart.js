@@ -1,6 +1,7 @@
 import { useCart } from "../../context/cart-context";
 import { ProductCardHorizontal, Navbar, FinalPrice } from "../../components/";
 import { Fragment } from "react";
+import "./Cart.css"
 
 export const Cart = () => {
 
@@ -9,9 +10,10 @@ export const Cart = () => {
     return (
         <Fragment>
             <Navbar />
-            <main className="main d-flex gap">
+            {cart && cart.length > 0 && <h2 className="cart-title">Your Cart ({cart.length}) items</h2>}
+            <main className="main-cart d-flex gap">
+            
                 <div className="d-flex direction-column gap">
-                    {cart && cart.length > 0 && <h2>Your Cart ({cart.length}) items</h2>}
                 {cart && cart.length > 0 ? cart.map(product => <ProductCardHorizontal product={product} key={product._id} />) : <h1>Cart is Empty</h1>}
                 </div>
                 <div className="fp">
