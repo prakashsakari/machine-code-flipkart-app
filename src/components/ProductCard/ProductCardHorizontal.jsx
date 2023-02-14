@@ -1,46 +1,7 @@
-// import { useCart } from "../../context/cart-context";
-// import { getItemById } from "../../utils";
 
 export const ProductCardHorizontal = ({product}) => {
     const { name, img, alt, brand,research,general} = product;
-    // const { saveLater, cartDispatch } = useCart();
-
-    // const isItemSaved = getItemById(saveLater, _id)
-
-    // const handleDecrement = (itemId) => {
-    //     cartDispatch({
-    //         type: "DECREMENT",
-    //         payload: itemId
-    //     })
-    // }
-
-    // const handleIncrement = (itemId) => {
-    //     cartDispatch({
-    //         type: "INCREMENT",
-    //         payload: itemId
-    //     })
-    // }
-
-    // const handleRemove = (itemId) => {
-    //     cartDispatch({
-    //         type: "REMOVE",
-    //         payload: itemId
-    //     })
-    // }
-
-    // const handleSaveForLater = (itemId) => {
-    //     cartDispatch({
-    //         type: "SAVE_LATER",
-    //         payload: {itemId, product}
-    //     })
-    // }
-
-    // const handleMoveToCart = () => {
-    //     cartDispatch({
-    //         type: "MOVE_TO_CART",
-    //         payload: product
-    //     })
-    // }
+   
 
     return (
      <div class="card-horizontal d-flex shadow">
