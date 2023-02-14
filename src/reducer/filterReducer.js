@@ -1,16 +1,10 @@
 export const filterReducer = (filterState, {type, payload}) => {
     switch (type){
-        case "LTH":
+        case "SORT":
             return {
                 ...filterState,
-                sort: payload
+                sortBy: payload
             }
-        case "HTL":
-            return {
-                ...filterState,
-                sort: payload
-            }
-        
         case "SIZE":
             return {
                 ...filterState,
@@ -25,7 +19,7 @@ export const filterReducer = (filterState, {type, payload}) => {
         case "CLEAR":
             return {
                 ...filterState,
-                sort: "",
+                sortBy: "",
                 brand: [],
                 category: "all",
                 size: []

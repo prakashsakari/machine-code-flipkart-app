@@ -1,7 +1,7 @@
 import { Size } from "./Size";
 import { Brand } from "./Brand";
 import { Category } from "./Category";
-import { Sort } from "./Sort";
+import { SortBy } from "./SortBy";
 import { useFilter } from "../../context/filter-context";
 import "./Filter.css";
 
@@ -23,7 +23,7 @@ export const Filter = () => {
                 <button className="button btn-link-primary cursor clear" onClick={handleClearClick}>Clear</button>
             </div>
             <div className="filters d-flex direction-column gap-10px">
-                <Sort />
+                <SortBy />
                 <Size />
                 <Brand />
                 <Category />

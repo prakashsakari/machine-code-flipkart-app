@@ -14,9 +14,9 @@ export const Size = () => {
 
     return (
         <div className="category">
-            <div className="category-title">Size</div>
+            {/* <div className="category-title">Size</div> */}
             <div className="category-size category-select d-flex direction-column gap-10px">
-                <label className="d-flex align-center gap-10px">
+                {/* <label className="d-flex align-center gap-10px">
                     <input className="input" type="checkbox" onChange={(e) => handleSizeChange(e, "S")} checked={size.includes("S")}/>
                     <span>S</span>
                 </label>
@@ -35,7 +35,7 @@ export const Size = () => {
                 <label className="d-flex align-center gap-10px">
                     <input className="input" type="checkbox" onChange={(e) => handleSizeChange(e, "XXL")} checked={size.includes("XXL")}/>
                     <span>XXL</span>
-                </label>
+                </label> */}
             </div>
         </div>
     )

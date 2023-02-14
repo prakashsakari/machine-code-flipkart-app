@@ -2,15 +2,15 @@ import { Fragment } from "react";
 import { data } from "../../db/data";
 import { Navbar, ProductCard, Filter } from "../../components/";
 import "./Product.css"
-import {getProductsByPriceSort, getProductsBySize, getProductsByCategory, getProductsByBrand} from "../../utils";
+import {getProductsByPriceSort, getProductsByBrand} from "../../utils";
 import { useFilter } from "../../context/filter-context";
 
 export const Products = () => {
-    const { sort, size, category, brand } = useFilter();
-    const filteredProductsByPrice = getProductsByPriceSort(data, sort);
-    const filteredProductsBySize = getProductsBySize(filteredProductsByPrice, size);
-    const filteredProductsByCategory = getProductsByCategory(filteredProductsBySize, category);
-    const filteredProductsByBrand = getProductsByBrand(filteredProductsByCategory, brand);
+    const { sortBy, brand } = useFilter();
+    const filteredProductsByPrice = getProductsByPriceSort(data, sortBy);
+    // const filteredProductsBySize = getProductsBySize(filteredProductsByPrice, size);
+    // const filteredProductsByCategory = getProductsByCategory(filteredProductsBySize, category);
+    const filteredProductsByBrand = getProductsByBrand(filteredProductsByPrice, brand);
 
     return (
             <Fragment>
