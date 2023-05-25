@@ -1,0 +1,56 @@
+
+ .vendor__scroll {
+  height: 2000px;
+  overflow: auto;
+  padding-top: 1rem;
+}
+
+.vendor__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.vendor__card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.vendor__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.vendor__location {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.vendor__contact {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.vendor__name:first-letter {
+  text-transform: capitalize;
+}
+
+.vendor__location:first-letter {
+  text-transform: lowercase;
+}
+
+/* Add different background colors for each vendor box */
+.vendor__card:nth-child(odd) {
+  background-color: #8338ec;
+}
+
+.vendor__card:nth-child(even) {
+  background-color: #3a86ff;
+} 

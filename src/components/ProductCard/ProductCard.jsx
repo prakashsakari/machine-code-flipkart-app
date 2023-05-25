@@ -4,9 +4,16 @@ import { getItemById } from "../../utils";
 import { useNavigate } from "react-router-dom";
 
 export const ProductCard = ({product}) => {
-    const {_id, name, img, alt, brand, newPrice, oldPrice, discount, rating} = product;
+    const {_id, name, img, alt,country, sg, mc, mor, moe,
+    age,
+    // crystallinity,
+    // bendable,
+    height} = product;
+
     const { cart, saveLater, cartDispatch } = useCart();
+
     const navigate = useNavigate();
+
 
     const handleAddToCart = () => {
         cartDispatch({
@@ -31,17 +38,17 @@ export const ProductCard = ({product}) => {
             <img class="card-image" src={img} alt={alt} />
         </div>
         <div class="card-details">
-            <div class="card-title">{brand}</div>
+            <div class="card-title"><i>{name}</i></div>
             <div class="card-description">
-               <p class="card-des">{name}</p>
-               <p class="card-price d-flex align-end">
-                  Rs. {newPrice}
-               	  <span class="price-strike-through">Rs. {oldPrice}</span>
-                  <span class="discount">({discount}% OFF)</span>
-               </p>
-               <p className="d-flex align-center">{rating} <span class="material-icons-outlined star">
-                star
-                </span></p>
+               <p class="card-des">{country}</p>
+               <p class="card-des">SG: {sg}</p>
+               <p class="card-des">MC: {mc}</p>
+               <p class="card-des">MOR: {mor}</p>
+               <p class="card-des">MOE: {moe}</p>
+               <p class="card-des">age: {age}</p>
+               <p class="card-des">height: {height}</p>
+               {/* <p class="card-des">cryst: {crystallinity}</p>
+               <p class="card-des">bendable: {bendable}</p> */}
             </div>
             <div class="cta-btn">
                <button class="button btn-primary btn-icon cart-btn d-flex align-center justify-center gap cursor btn-margin"
@@ -49,7 +56,7 @@ export const ProductCard = ({product}) => {
                     <span class="material-icons-outlined">
                         shopping_cart
                     </span>
-                 {(isItemInCart || isItemSaved) ? "Go To Cart" : "Add To Cart"}
+                 {(isItemInCart || isItemSaved) ? "Go To bamboo list" : "Add To bamboo list"}
                </button>
             </div>
         </div>

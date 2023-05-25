@@ -9,7 +9,6 @@ const CartProvider = ({children}) => {
         cart: [],
         saveLater: [],
     })
-
     return (
         <CartContext.Provider value={{cart, cartDispatch, saveLater}}>{children}</CartContext.Provider>
     )
