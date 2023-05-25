@@ -6,11 +6,14 @@ import { useNavigate } from "react-router-dom";
 export const ProductCard = ({product}) => {
     const {_id, name, img, alt,country, sg, mc, mor, moe,
     age,
-    crystallinity,
-    bendable,
+    // crystallinity,
+    // bendable,
     height} = product;
+
     const { cart, saveLater, cartDispatch } = useCart();
+
     const navigate = useNavigate();
+
 
     const handleAddToCart = () => {
         cartDispatch({
@@ -44,20 +47,8 @@ export const ProductCard = ({product}) => {
                <p class="card-des">MOE: {moe}</p>
                <p class="card-des">age: {age}</p>
                <p class="card-des">height: {height}</p>
-               <p class="card-des">cryst: {crystallinity}</p>
-               <p class="card-des">bendable: {bendable}</p>
-               
-               
-
-
-               {/* <p class="card-price d-flex align-end">
-                  Rs. {newPrice}
-               	  <span class="price-strike-through">Rs. {oldPrice}</span>
-                  <span class="discount">({discount}% OFF)</span>
-               </p> */}
-               {/* <p className="d-flex align-center">{rating} <span class="material-icons-outlined star">
-                star
-                </span></p> */}
+               {/* <p class="card-des">cryst: {crystallinity}</p>
+               <p class="card-des">bendable: {bendable}</p> */}
             </div>
             <div class="cta-btn">
                <button class="button btn-primary btn-icon cart-btn d-flex align-center justify-center gap cursor btn-margin"

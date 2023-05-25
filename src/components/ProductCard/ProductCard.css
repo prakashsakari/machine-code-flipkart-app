@@ -9,7 +9,7 @@
   
 .card-image {
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .star {
@@ -24,3 +24,40 @@
 .discount {
     font-size: 14px;
 }
+
+.card-description {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .card-description .card-des {
+    margin: 0;
+  }
+  
+  .card-description .card-des i {
+    font-style: italic;
+  }
+  
+  .card-description .card-des b {
+    font-weight: bold;
+  }
+  
+  .card-description .card-des .research,
+  .card-description .card-des .general {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .card-description .card-des .research i,
+  .card-description .card-des .general i {
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  .card-description .card-des .research b,
+  .card-description .card-des .general b {
+    font-weight: bold;
+  }
+  

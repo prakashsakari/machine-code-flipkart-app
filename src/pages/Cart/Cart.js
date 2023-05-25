@@ -1,5 +1,5 @@
 import { useCart } from "../../context/cart-context";
-import { ProductCardHorizontal, Navbar, FinalPrice } from "../../components/";
+import { ProductCardHorizontal, Navbar,} from "../../components/";
 import { Fragment } from "react";
 import "./Cart.css"
 

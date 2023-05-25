@@ -3,6 +3,7 @@ import "./Navbar.css";
 
 export const Navbar = () => {
     return (
+  
         <header className="heading d-flex grow-shrink-basis align-center">
             <div className="heading-title-icon d-flex grow-shrink-basis align-center">
                 <h1 className="heading-title">
@@ -19,8 +20,14 @@ export const Navbar = () => {
                         shopping_cart
                         </span>bamboo list</Link>
                     </li>
+                    <li className="list-item-inline">
+                        <Link to="/vendor" className="link cursor">Vendor</Link>
+                    </li>
+                    <li className="list-item-inline">
+                        <Link to="/optimization" className="link cursor">Optimization</Link>
+                    </li>
                     <li>
-         <div class="dropdown">
+ <div class="dropdown">
   <button class="dropbtn">Government Yojna</button>
   <div class="dropdown-content scrollable">
     <a href="https://pmksy.gov.in/"> Pradhan Mantri Krishi Sinchai Yojana (PMKSY)</a>

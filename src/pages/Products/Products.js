@@ -8,8 +8,6 @@ import { useFilter } from "../../context/filter-context";
 export const Products = () => {
     const { sortBy, brand } = useFilter();
     const filteredProductsByPrice = getProductsByPriceSort(data, sortBy);
-    // const filteredProductsBySize = getProductsBySize(filteredProductsByPrice, size);
-    // const filteredProductsByCategory = getProductsByCategory(filteredProductsBySize, category);
     const filteredProductsByBrand = getProductsByBrand(filteredProductsByPrice, brand);
 
     return (

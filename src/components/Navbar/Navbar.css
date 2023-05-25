@@ -8,11 +8,13 @@
 }
 
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    color:white ;
+    background-color:green;
+    width: 100%;
     padding: 16px;
     font-size: 16px;
     border: none;
+
   }
   
   .dropdown {
@@ -32,11 +34,12 @@
   }
   
   .dropdown-content a {
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
+
 
   
   .dropdown-content a:hover {background-color: #ddd;}
@@ -44,4 +47,3 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-  
